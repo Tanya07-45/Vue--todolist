@@ -15,10 +15,14 @@
   <body>
     <header>
       <h1>Vue Course Goals</h1>
+      <!-- if you place {[courseGoal}} here it will show as a text because this part is not connected with vue app -->
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p></p>
+      <!-- you can reference your return data object property. -->
+      <!-- it means that you wanna output the content which is stored in coursegoal -->
+      <p>{{courseGoal}}</p>
+      <!-- this syntax is called interpolation -->
     </section>
   </body>
 </html>
