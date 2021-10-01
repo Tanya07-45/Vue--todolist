@@ -21,8 +21,12 @@
       <h2>My Course Goal</h2>
       <!-- you can reference your return data object property. -->
       <!-- it means that you wanna output the content which is stored in coursegoal -->
-      <p>{{courseGoal}}</p>
+      <p>{{ outputGoal() }}</p>
       <!-- this syntax is called interpolation -->
+      <!-- if we want to pass a dynamic value as an attribute,we need to use different syntax,and thats a vue binding syntax
+        so we used vue called directive.
+      <p>Learn More <a href="{{vueLink}}">About Vue</a></p> -->
+      <p>Learn More <a v-bind:href="vueLink">About Vue</a></p>
     </section>
   </body>
 </html>
